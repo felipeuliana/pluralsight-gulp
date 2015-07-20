@@ -1,5 +1,8 @@
 {
     "directory": "bower_components",
     "scripts": {
-    }
+    },
+    "proxy": "http://mtzcpd830:cvc$201410@cvcproxy01.cvc.com.br:8080/",
+    "https-proxy": "http://mtzcpd830:cvc$201410@cvcproxy01.cvc.com.br:8080/",
+    "strict-ssl": false
 }
