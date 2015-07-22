@@ -1,10 +1,10 @@
 module.exports = function () {
   var client = './src/client/';
   var clientApp = client + 'app/';
+  var server = './src/server/';
   var temp = './.tmp/';
 
   var config = {
-    temp: temp,
 
     /**
      * Files paths
@@ -22,6 +22,8 @@ module.exports = function () {
       clientApp + '**/*.js',
       '!' + clientApp + '**/*.spec.js',
     ],
+    server: server,
+    temp: temp,
 
     less: client + 'styles/styles.less',
 
@@ -29,7 +31,11 @@ module.exports = function () {
       json: require('./bower.json'),
       directory: './bower_components/',
       ignorePath: '../..'
-    }
+    },
+
+    defaultPort: 7203,
+    nodeServer: './src/server/app.js'
+    // port: ,
 
   };
 
