@@ -25,6 +25,8 @@ module.exports = function () {
     server: server,
     temp: temp,
 
+    browserReloadDelay: 1000,
+
     less: client + 'styles/styles.less',
 
     bower: {
